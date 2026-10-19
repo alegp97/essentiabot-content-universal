@@ -20,3 +20,13 @@ python skills/essentiabot-content/scripts/diagnose.py "https://example.com"
 ```
 
 For a private Instagram configuration, add `--env-file` with its actual path; add `--install` only when needed. Diagnostics omit text and credential values, but source URLs can contain private identifiers; review before sharing.
+
+## Prompt and behavior problems
+
+| Symptom | Cause to check | Remedy |
+| --- | --- | --- |
+| The agent says a named prompt does not exist | Wrong path or an older installed skill | Update the complete skill folder; consult its `prompts/README.md` |
+| A prompt URL is echoed but not applied | The host could not read it, or confused it with the content source | Separate the behavioral-prompt URL from the content URL; paste the full prompt if needed |
+| A bare URL produces the wrong format | A chat default was never established or a later instruction overrides it | State the desired lens in the message or set a chat default |
+| Antithesis invents a second source | An analytical objection was presented as external evidence | Require it to be labeled as a constructed objection; request actual verification separately |
+| A prompt seems to promise access to unavailable content | Prompt instructions cannot create tools | Supply the material or use a host with the necessary capabilities |

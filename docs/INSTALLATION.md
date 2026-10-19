@@ -29,7 +29,7 @@ Then follow the remote and push instructions displayed by your own newly created
 
 ## Install in a skill-aware agent
 
-Copy the **whole `essentiabot-content` directory**, including `scripts/`, `references/`, and the blank `.env.example`, into the host's supported skills directory. The separate skill ZIP contains precisely this directory. Restart or refresh skill discovery as required by that host.
+Copy the **whole `essentiabot-content` directory**, including `scripts/`, `references/`, `prompts/`, and the blank `.env.example`, into the host's supported skills directory. The separate skill ZIP contains precisely this directory. Restart or refresh skill discovery as required by that host.
 
 For a standard Codex user setup with no custom skill directory, the destination is `~/.codex/skills/essentiabot-content`. If the host is configured with a different skills directory, use that directory. The optional `agents/openai.yaml` contains Codex display metadata; other agents can ignore it.
 
@@ -54,3 +54,7 @@ python3 -m venv .venv
 ```
 
 Web and public social extraction do not require the YouTube profile. `--install` uses a temporary isolated target directory, not a global installation. Hosts that prohibit subprocesses or pip must use their own browsing tools. Do not run simultaneous installations into the same cache.
+
+## Start your first conversation
+
+After installation, use the [copy-and-paste examples](EXAMPLES.md). The prompt library is inside the skill, so an agent with file access can read `prompts/antithesis.md` relative to the installed skill directory. When using only chat messages, paste the complete template instead; naming a file does not make it accessible. The [prompt guide](PROMPT_GUIDE.md) explains both methods.

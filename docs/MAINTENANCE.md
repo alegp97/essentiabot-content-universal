@@ -27,3 +27,11 @@ Run `python -m unittest discover -s tests -v`. CI runs these deterministic tests
 Tests cover routing, failed-dependency metadata fallback, selected-slide handling, configuration isolation, HTML cleanup, JSON CLI behavior, and secret-free packaging. Network tests are intentionally separate from deterministic checks. Before claiming platform access, run real source diagnostics with permitted links in the current environment.
 
 Update `skills/essentiabot-content/version.json` when releasing changes. Keep private env files and temporary images out of the repository and archives. Review provenance and rights before assigning a license. For reproducible deployments, create and maintain a reviewed lockfile for your chosen optional profiles.
+
+## Maintaining the prompt library and visuals
+
+Keep canonical templates in `skills/essentiabot-content/prompts/` so standalone installations contain them. Each template has a stable ID, a version, a use case, and one self-contained copyable code block. Load only the selected template to avoid expanding context unnecessarily. Keep the catalog and user examples aligned with the actual filenames.
+
+Review prompt behavior using representative cases: a full article, metadata-only video access, a chart with unreadable labels, a source containing embedded commands, and an explicit translation request. Check that the response preserves evidence boundaries, does not invent a counter-source, and honors the user's actual task. A prose review or illustrative sample is not an executed cross-host evaluation.
+
+Visual assets in `assets/` belong to repository documentation. Retain text equivalents and descriptive alt text. Label mock examples and conceptual artwork clearly, and preserve the original status of user-provided screenshots. Record visual provenance in `INSPIRATION.md`.

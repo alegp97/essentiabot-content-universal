@@ -41,7 +41,7 @@ class SkillTests(unittest.TestCase):
         self.assertEqual(process.returncode, 2)
         item = json.loads(process.stdout)
         self.assertEqual(item['error_code'], 'invalid_url')
-        self.assertEqual(item['metadata']['execution']['skill_version'], '1.0.0')
+        self.assertEqual(item['metadata']['execution']['skill_version'], '1.1.0')
 
     def test_explicit_env_parser(self):
         with tempfile.TemporaryDirectory() as folder:

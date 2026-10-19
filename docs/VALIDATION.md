@@ -1,5 +1,15 @@
 # Validation evidence
 
+## Release 1.1.0 — prompt library and illustrated documentation
+
+Validated on 2026-10-19 with Windows and Python 3.13.15. All 16 deterministic tests pass, including relative links to the new prompt files and images. The skill frontmatter validator passes. The 12 prompt templates are included inside the installable skill folder and share explicit coverage and evidence boundaries. Their instructions were reviewed for consistency; this is not a claim of automated behavioral evaluation across different assistants.
+
+Both new SVG diagrams were rendered in a headless browser and visually inspected. Text stayed within the canvas. The conceptual hero image was inspected, and the supplied conversation screenshot was copied unchanged. Illustrative outputs and the user screenshot are labeled with their actual provenance.
+
+The extractor implementation is unchanged from 1.0.0. The live smoke checks below belong to that release; they were not repeated for this documentation update. The package rebuild excludes `.git`, Python bytecode, private configuration, and populated env files while retaining the prompt library and blank template.
+
+## Release 1.0.0 — extraction baseline
+
 Release: 1.0.0. Validation date: 2026-10-19.
 
 ## Local checks
