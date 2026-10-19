@@ -40,7 +40,7 @@ Source: [paste URL here]
 
 ![User-supplied Essentiabot conversation showing a YouTube link, an automatic-transcript coverage statement, and a concise set of core ideas](assets/real-chat-example.png)
 
-*User-provided screenshot from an existing conversation, shown unedited. Its interface includes a Spanish status label; the analysis is in English. It illustrates the workflow, not an independently reproduced extraction or a guarantee of identical results.*
+*Real screenshot from an existing conversation, about Jordan Peterson’s analysis of an excerpt from Don Quixote (the road is always better than the inn)
 
 ![Illustrative antithesis analysis with a thesis, objection, and a narrower conclusion](assets/antithesis-example.svg)
 
