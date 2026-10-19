@@ -4,7 +4,9 @@
 
 ![Conceptual illustration of noisy source fragments becoming a few clear evidence cards](assets/essentiabot-hero.png)
 
-Essentiabot helps your chat retrieve the content available behind a link—page text, YouTube captions, social captions, or images—and examine it with a useful behavioral prompt. Get to the central idea, test the argument, and separate substance from repetition, promotion, and unsupported claims.
+Essentiabot helps your chat retrieve the content available behind a link—page text, YouTube captions, social media posts&captions, or images—and examine it with a useful behavioral prompt. Get to the central idea, test the argument, and separate substance from repetition, promotion, and unsupported claims.
+
+The reason for developing this skill is that the internet is becoming a quagmire of unnecessary information that, nonetheless, hijacks and captures our attention. Just paste the url and talk about what's important. Store useful insights in your preferred AI.
 
 **[Get started](docs/INSTALLATION.md) · [Choose a prompt](skills/essentiabot-content/prompts/README.md) · [Copy-and-paste examples](docs/EXAMPLES.md) · [User manual](docs/USER_MANUAL.md)**
 
@@ -69,8 +71,8 @@ Use one lens at a time. Start with `essence`, then ask a focused follow-up using
 
 | Source | Available content | Important limit |
 | --- | --- | --- |
-| Websites | Returned page text | The Python helper does not render JavaScript |
-| YouTube | Captions/transcripts when accessible; metadata otherwise | No audio transcription or full-video viewing |
+| Websites | Returned page text | The Python helper does not render JavaScript, only the core texts. |
+| YouTube | Captions/transcripts when accessible; metadata otherwise | Needs full text transcription |
 | TikTok | Public caption and thumbnail through oEmbed | No spoken-video transcript |
 | Instagram | Public metadata; optional authenticated caption and images | Public metadata may be generic or only a cover |
 | Images | Downloaded images or user attachments, plus host vision | No visual claims until the image has actually been opened |
@@ -99,5 +101,7 @@ The self-contained skill layout draws on [Anthropic's skills repository](https:/
 python -m unittest discover -s tests -v
 python skills/essentiabot-content/scripts/run_essentiabot.py "https://example.com"
 ```
+
+Feel free to work wtih this public software.
 
 Adapted from the owner's Essentiabot Content portable plugin 0.4.0. The repository has no assigned open-source license; see [provenance](PROVENANCE.md). Optional dependencies retain their own licenses. Repository: [alegp97/essentiabot-content-universal](https://github.com/alegp97/essentiabot-content-universal).
