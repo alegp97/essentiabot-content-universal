@@ -1,0 +1,4 @@
+interface:
+  display_name: "Essentiabot Content"
+  short_description: "Extract links and separate useful ideas from hype"
+  default_prompt: "Use $essentiabot-content to analyze this link, state the coverage, and distinguish evidence from hype."

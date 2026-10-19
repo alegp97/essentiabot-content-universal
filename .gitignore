@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+**/instagram_private_config.txt
+**/sessions/
+**/*session*.json
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+work/
